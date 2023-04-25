@@ -7,7 +7,7 @@
 # 3. Assignment Description:
 
 #    This program will select a random number after prompting the user for a range.
-#    It will teh  have them try to guess that random number. At teh end it will
+#    It will then have them try to guess that random number. At teh end it will
 #    tell the user how many guess it took them.
 
 # 4. What was the hardest part? Be as specific as possible.
