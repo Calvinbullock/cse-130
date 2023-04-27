@@ -60,14 +60,14 @@ try:
     dict = json.loads(data)
 
     #Normal input code
-    """ 
+    
     # Takes input from the user for password and username.
     user_name_in = input("Username: ")
     password_in = input("Password: ")
 
     # Passes the username and password input by the user and checks them. 
     Login_Log(Authentication(user_name_in, password_in))
-    """
+    
 
     # Auto test cases
     print("Username: John Cheese, Password: None shall pass")
@@ -81,7 +81,10 @@ try:
     print("Username: Black Knight, Password: None shall pass.")
     Login_Log(Authentication("Black Knight", "None shall pass"))
 
+    # Closes the file to free up memery
     file.close()
 
 except:
+    # Closes the file if an error occurs
+    file.close()
     print("Data unreachable")
