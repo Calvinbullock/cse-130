@@ -48,9 +48,9 @@ def Login_Log(authorized):
     Makes a print statment.
     """
     if authorized:
-        print("You are authenticated!.")
+        print("You are authenticated!.\n")
     else:
-        print("You are not authorized to use the system.")
+        print("You are not authorized to use the system.\n")
 
 # checks if the the file opens and if the dictinary can be used.
 try:
@@ -72,14 +72,24 @@ try:
     # Auto test cases
     print("Username: John Cheese, Password: None shall pass")
     Login_Log(Authentication("John Cheese", "None shall pass"))
-    print()
 
     print("Username: Black Knight, Password: Tis but a scratch.")
     Login_Log(Authentication("Black Knight", "Tis but a scratch"))
-    print()
 
-    print("Username: Black Knight, Password: None shall pass.")
+    print("Username: John Cheese, Password: Tis but a scratch.")
+    Login_Log(Authentication("John Cheese", "Tis but a scratch."))
+
+    print("Username: King Arthur, Password: Bring out your dead!")
+    Login_Log(Authentication("King Arthur", "Bring out your dead!"))
+
+    print("Username: Black Knight, Password: None shall pass")
     Login_Log(Authentication("Black Knight", "None shall pass"))
+
+    print("Username: King Arthur Password: Run away!")
+    Login_Log(Authentication("King Arthur", "Run away!"))
+
+    print("Username: French Soldier, Password: I fart in your general direction")
+    Login_Log(Authentication("French Soldier", "I fart in your general direction"))
 
     # Closes the file to free up memery
     file.close()
@@ -88,3 +98,33 @@ except:
     # Closes the file if an error occurs
     file.close()
     print("Data unreachable")
+
+"""
+John Cheese	
+None shall pass	
+Not authenticated
+
+Black Knight
+Tis but a scratch.	
+Not authenticated
+
+John Cheese
+Tis but a scratch
+Not authenticated
+
+King Arthur	
+Bring out your dead!
+not authenticated
+
+Black Knight
+None shall pass
+Authenticated
+
+King Arthur
+Run away!
+Authenticated
+
+French Soldier
+I fart in your general direction
+Authenticated
+"""
