@@ -3,19 +3,16 @@
 # 2. Assignment Name:
 #      Lab 04: Monopoly
 # 3. Assignment Description:
-#      -describe what this program is meant to do-
+#      This program determines if you can or how to put a hotel on  
+#      Pennsylvania Avenue in the game of monopoly.
 # 4. What was the hardest part? Be as specific as possible.
-#      Was it the syntax of Python?
-#      Was it an aspect of the problem you are to solve?
-#      Was it the instructions or any part of the problem definition?
-#      Was it the submission process?
+#      The hardest part was finding meaningful places to put comments.
 # 5. How long did it take for you to complete the assignment?
-#      -total time in hours including reading the assignment and
-#       submitting the program-
+#      4 hours
 
 
 def number_flop(num):
-    # This functions translates the users input of constructed buildings
+    # This functions translates the users input of constructed buildings -
     # on a propertie to how many houses need to be built.
     # 0 = 4, 1 = 3, 2 = 2, 3 = 1, 4 = 0, 5 = 0
 
@@ -36,8 +33,11 @@ def number_flop(num):
         return 0
 
 
+# Asks if you have all the green colour properties
 colour_prompt = input("Do you own all the green properties? (y/n): ")
 
+# Checks if you have all the green colour properties
+# Converts prompt to lower case for consistancey.
 if colour_prompt.lower() == "y":
     prompt_PA = input(
         "What is on Pennsylvania Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
@@ -61,13 +61,14 @@ if colour_prompt.lower() == "y":
                 num_hotels = int(num_hotels)
 
                 if num_hotels > 0:
+                    # Sets the number of houses needed, total cost needed
+                    # total amount of money you have (wallet). 
                     num_house_PC_need = number_flop(prompt_pc)
                     num_house_NC_need = number_flop(prompt_NC)
                     num_house_total_need = (
                         number_flop(prompt_PA) + num_house_PC_need + num_house_NC_need
                     )
                     total_money_need = 200 * num_house_total_need
-
                     wallet_size = input("How much cash do you have to spend? ")
                     wallet_size = int(wallet_size)
 
@@ -75,10 +76,6 @@ if colour_prompt.lower() == "y":
                         houses = input("How many houses are there to purchase? ")
                         num_houses = int(houses)
 
-                        # TODO testing here 
-                        print(
-                            f"\nhouse-num={num_houses}, house-need={num_house_total_need}"
-                        )
                         if num_houses >= num_house_total_need:
                             if num_house_NC_need > 0:
                                 print(
