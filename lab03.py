@@ -6,7 +6,8 @@
 #      This program determines if you can or how to put a hotel on  
 #      Pennsylvania Avenue in the game of monopoly.
 # 4. What was the hardest part? Be as specific as possible.
-#      The hardest part was finding meaningful places to put comments.
+#      The hardest part was finding meaningful places to put comments and 
+#      makeing the comments meaningful.
 # 5. How long did it take for you to complete the assignment?
 #      4 hours
 
