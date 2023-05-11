@@ -69,8 +69,9 @@ if colour_prompt.lower() == "y":
                     )
 
                     wallet_size = input("How much cash do you have to spend? ")
+                    wallet_size = int(wallet_size)
 
-                    if total_money_need > wallet_size:
+                    if total_money_need < wallet_size:
                         houses = input("How many houses are there to purchase?")
                         num_houses = int(houses)
 
