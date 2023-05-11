@@ -135,13 +135,6 @@ else:
         "You cannot purchase a hotel until you own all the properties of a given color group."
     )
 
-# C
-# print(
-#     "This will cost $[price].\
-#          Purchase 1 hotel and [number of houses] house(s).\
-#          Put 1 hotel on Pennsylvania and return any houses to the bank.\
-#          Put [number of houses] house(s) on Pacific."
-# )
 
 # D
 # print(
