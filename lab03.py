@@ -14,7 +14,28 @@
 #       submitting the program-
 
 
+def number_flop(num):
     # This functions translates the users input of constructed buildings
+    # on a propertie to how many houses need to be built.
+    # 0 = 4, 1 = 3, 2 = 2, 3 = 1, 4 = 0, 5 = 0
+
+    # paramiters
+    # (int)
+
+    # returns
+    # (int)
+    if num == 0:
+        return 4
+    elif num == 1:
+        return 3
+    elif num == 2:
+        return 2
+    elif num == 3:
+        return 1
+    elif num == (4 or 5):
+        return 0
+
+
 colour_prompt = input("Do you own all the green properties? (y/n): ")
 
 if colour_prompt.lower() == "y":
@@ -41,12 +62,11 @@ if colour_prompt.lower() == "y":
                 hotels = input("How many hotels are there to purchase? ")
                 hotels = int(hotels)
 
-                if hotels > 0:
-                    num_house_PA_need = 0
-                    num_house_NC_need = 0
-                    num_house_PC_need = 0
-                    num_house_total_need = 0
-                    total_money_need = 0
+                    num_house_PC_need = number_flop(prompt_pc)
+                    num_house_NC_need = number_flop(prompt_NC)
+                    num_house_total_need = (
+                        number_flop(prompt_PA) + num_house_PC_need + num_house_NC_need
+                    )
 
                     wallet_size = input("How much cash do you have to spend? ")
 
