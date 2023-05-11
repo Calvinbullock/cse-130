@@ -14,6 +14,7 @@
 #       submitting the program-
 
 
+    # This functions translates the users input of constructed buildings
 colour_prompt = input("Do you own all the green properties? (y/n): ")
 
 if colour_prompt.lower() == "y":
