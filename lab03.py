@@ -102,41 +102,33 @@ if colour_prompt.lower() == "y":
                                         Put [number of houses] house(s) on Pacific."
                                 )
                                 print(
-                                    "This will cost $[price].\
-                                         Purchase 1 hotel and [number of houses] house(s).\
-                                         Put 1 hotel on Pennsylvania and return any houses to the bank.\
-                                         Put [number of houses] house(s) on Pacific."
-                                )
+                        else:
+                            print(
+                                "There are not enough houses available for purchase at this time."
+                            )
+                    else:
+                        print(
+                            "You do not have sufficient funds to purchase a hotel at this time."
+                        )
 
+                else:
+                    print(
+                        "There are not enough hotels available for purchase at this time."
+                    )
 
-# print("You do not have sufficient funds to purchase a hotel at this time.")
+            else:
+                print("Swap Pacific's hotel with Pennsylvania's 4 houses.")
 
-# print("There are not enough houses available for purchase at this time.")
-# print("There are not enough hotels available for purchase at this time.")
-# print(
-#     "You cannot purchase a hotel until you own all the properties of a given color group."
-# )
+        else:
+            print("Swap North Carolina's hotel with Pennsylvania's 4 houses.")
 
-# print("You cannot purchase a hotel if the property already has one.")
-# print("Swap North Carolina's hotel with Pennsylvania's 4 houses.")
-# print("Swap Pacific's hotel with Pennsylvania's 4 houses.")
+    else:
+        print("You cannot purchase a hotel if the property already has one.")
 
-# A
-# print(
-#     "This will cost $[price].\
-#          Purchase 1 hotel and [number of houses] house(s).\
-#          Put 1 hotel on Pennsylvania and return any houses to the bank.\
-#          Put [number of houses] house(s) on North Carolina.\
-#          Put [number of houses] house(s) on Pacific."
-# )
-
-# B
-# print(
-#     "This will cost $[price].\
-#          Purchase 1 hotel and [number of houses] house(s).\
-#          Put 1 hotel on Pennsylvania and return any houses to the bank.\
-#          Put [number of houses] house(s) on North Carolina."
-# )
+else:
+    print(
+        "You cannot purchase a hotel until you own all the properties of a given color group."
+    )
 
 # C
 # print(
