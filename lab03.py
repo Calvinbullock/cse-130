@@ -80,28 +80,33 @@ if colour_prompt.lower() == "y":
                         if num_houses < num_house_total_need:
                             if num_house_NC_need > 0:
                                 print(
-                                    "This will cost $[price].\
-                                        Purchase 1 hotel and [number of houses] house(s).\
-                                        Put 1 hotel on Pennsylvania and return any houses to the bank.\
-                                        Put [number of houses] house(s) on North Carolina.\
-                                        Put [number of houses] house(s) on Pacific."
+                                    "This will cost $[price]."
+                                    "\nPurchase 1 hotel and [number of houses] house(s)."
+                                    "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
+                                    "\nPut [number of houses] house(s) on North Carolina."
+                                    "\nPut [number of houses] house(s) on Pacific.\n"
                                 )
                                 print(
-                                    "This will cost $[price].\
-                                        Purchase 1 hotel and [number of houses] house(s).\
-                                        Put 1 hotel on Pennsylvania and return any houses to the bank.\
-                                        Put [number of houses] house(s) on North Carolina."
+                                    "\nThis will cost $[price]."
+                                    "\nPurchase 1 hotel and [number of houses] house(s)."
+                                    "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
+                                    "\nPut [number of houses] house(s) on North Carolina.\n"
                                 )
 
                             elif num_house_PC_need > 0:
                                 print(
-                                    "This will cost $[price].\
-                                        Purchase 1 hotel and [number of houses] house(s).\
-                                        Put 1 hotel on Pennsylvania and return any houses to the bank.\
-                                        Put [number of houses] house(s) on North Carolina.\
-                                        Put [number of houses] house(s) on Pacific."
+                                    "\nThis will cost $[price]."
+                                    "\nPurchase 1 hotel and [number of houses] house(s)."
+                                    "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
+                                    "\nPut [number of houses] house(s) on North Carolina."
+                                    "\nPut [number of houses] house(s) on Pacific.\n"
                                 )
                                 print(
+                                    "\nThis will cost $[price]."
+                                    "\nPurchase 1 hotel and [number of houses] house(s)."
+                                    "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
+                                    "\nPut [number of houses] house(s) on Pacific.\n"
+                                )
                         else:
                             print(
                                 "There are not enough houses available for purchase at this time."
