@@ -39,28 +39,28 @@ def number_flop(num):
 colour_prompt = input("Do you own all the green properties? (y/n): ")
 
 if colour_prompt.lower() == "y":
-    prompt_p_a = input(
+    prompt_PA = input(
         "What is on Pennsylvania Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
     )
-    prompt_p_a = int(prompt_p_a)
+    prompt_PA = int(prompt_PA)
 
     print("line 23")
-    if prompt_p_a != 5:
-        prompt_n_c = input(
+    if prompt_PA != 5:
+        prompt_NC = input(
             "What is on North Carolina Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
         )
-        prompt_n_c = int(prompt_n_c)
+        prompt_NC = int(prompt_NC)
         print("line 27")
 
-        if prompt_n_c != 5:
+        if prompt_NC != 5:
             prompt_pc = input(
                 "What is on Pacific Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
             )
             prompt_pc = int(prompt_pc)
 
             if prompt_pc != 5:
-                hotels = input("How many hotels are there to purchase? ")
-                hotels = int(hotels)
+                num_hotels = input("How many hotels are there to purchase? ")
+                num_hotels = int(num_hotels)
 
                     num_house_PC_need = number_flop(prompt_pc)
                     num_house_NC_need = number_flop(prompt_NC)
@@ -72,8 +72,9 @@ if colour_prompt.lower() == "y":
 
                     if total_money_need > wallet_size:
                         houses = input("How many houses are there to purchase?")
+                        num_houses = int(houses)
 
-                        if houses < num_house_total_need:
+                        if num_houses < num_house_total_need:
                             if num_house_NC_need > 0:
                                 print(
                                     "This will cost $[price].\
