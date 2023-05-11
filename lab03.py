@@ -62,11 +62,13 @@ if colour_prompt.lower() == "y":
                 num_hotels = input("How many hotels are there to purchase? ")
                 num_hotels = int(num_hotels)
 
+                if num_hotels > 0:
                     num_house_PC_need = number_flop(prompt_pc)
                     num_house_NC_need = number_flop(prompt_NC)
                     num_house_total_need = (
                         number_flop(prompt_PA) + num_house_PC_need + num_house_NC_need
                     )
+                    total_money_need = 200 * num_house_total_need
 
                     wallet_size = input("How much cash do you have to spend? ")
                     wallet_size = int(wallet_size)
