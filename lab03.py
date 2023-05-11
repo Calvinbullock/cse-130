@@ -44,13 +44,11 @@ if colour_prompt.lower() == "y":
     )
     prompt_PA = int(prompt_PA)
 
-    print("line 23")
     if prompt_PA != 5:
         prompt_NC = input(
             "What is on North Carolina Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
         )
         prompt_NC = int(prompt_NC)
-        print("line 27")
 
         if prompt_NC != 5:
             prompt_pc = input(
@@ -74,38 +72,42 @@ if colour_prompt.lower() == "y":
                     wallet_size = int(wallet_size)
 
                     if total_money_need < wallet_size:
-                        houses = input("How many houses are there to purchase?")
+                        houses = input("How many houses are there to purchase? ")
                         num_houses = int(houses)
 
-                        if num_houses < num_house_total_need:
+                        # TODO testing here 
+                        print(
+                            f"\nhouse-num={num_houses}, house-need={num_house_total_need}"
+                        )
+                        if num_houses >= num_house_total_need:
                             if num_house_NC_need > 0:
                                 print(
-                                    "This will cost $[price]."
-                                    "\nPurchase 1 hotel and [number of houses] house(s)."
+                                    f"This will cost ${total_money_need}."
+                                    f"\nPurchase 1 hotel and {num_house_total_need} house(s)."
                                     "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
-                                    "\nPut [number of houses] house(s) on North Carolina."
-                                    "\nPut [number of houses] house(s) on Pacific.\n"
+                                    f"\nPut {num_house_NC_need} house(s) on North Carolina."
+                                    f"\nPut {num_house_PC_need} house(s) on Pacific.\n"
                                 )
                                 print(
-                                    "\nThis will cost $[price]."
+                                    f"This will cost ${total_money_need}."
                                     "\nPurchase 1 hotel and [number of houses] house(s)."
                                     "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
-                                    "\nPut [number of houses] house(s) on North Carolina.\n"
+                                    f"\nPut {num_house_NC_need} house(s) on North Carolina.\n"
                                 )
 
                             elif num_house_PC_need > 0:
                                 print(
-                                    "\nThis will cost $[price]."
-                                    "\nPurchase 1 hotel and [number of houses] house(s)."
+                                    f"This will cost ${total_money_need}."
+                                    f"\nPurchase 1 hotel and {num_house_total_need} house(s)."
                                     "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
-                                    "\nPut [number of houses] house(s) on North Carolina."
-                                    "\nPut [number of houses] house(s) on Pacific.\n"
+                                    f"\nPut {num_house_NC_need} house(s) on North Carolina."
+                                    f"\nPut {num_house_PC_need} house(s) on Pacific.\n"
                                 )
                                 print(
-                                    "\nThis will cost $[price]."
+                                    f"This will cost ${total_money_need}."
                                     "\nPurchase 1 hotel and [number of houses] house(s)."
                                     "\nPut 1 hotel on Pennsylvania and return any houses to the bank."
-                                    "\nPut [number of houses] house(s) on Pacific.\n"
+                                    f"\nPut {num_house_PC_need} house(s) on Pacific.\n"
                                 )
                         else:
                             print(
