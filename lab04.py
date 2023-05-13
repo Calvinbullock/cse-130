@@ -13,7 +13,7 @@
 
 
 def number_lot(num):
-    # This functions translates the users input of constructed buildings -
+    # This functions translates the users input of constructed buildings
     # on a propertie to how many houses need to be built.
     # 0 = 4, 1 = 3, 2 = 2, 3 = 1, 4 = 0, 5 = 0
 
@@ -45,18 +45,21 @@ if colour_prompt.lower() == "y":
     )
     prompt_PA = int(prompt_PA)
 
+    # Ends if hotel is on Pennsylvania Avenue ends program if prompt_pa = 5
     if prompt_PA != 5:
         prompt_NC = input(
             "What is on North Carolina Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
         )
         prompt_NC = int(prompt_NC)
 
+        # Ends if hotel is on Carolina Avenue ends program if prompt_NC = 5
         if prompt_NC != 5:
             prompt_pc = input(
                 "What is on Pacific Avenue? (0:nothing, 1:one house, ... 5:a hotel) "
             )
             prompt_pc = int(prompt_pc)
 
+            # Ends if hotel is on Pacific Avenue? ends program if prompt_PC = 5
             if prompt_pc != 5:
                 num_hotels = input("How many hotels are there to purchase? ")
                 num_hotels = int(num_hotels)
@@ -69,12 +72,13 @@ if colour_prompt.lower() == "y":
                     num_house_total_need = (
                         number_lot(prompt_PA) + num_house_PC_need + num_house_NC_need
                     )
-                    
+
                     # The number of house tokkens needed and pluse 200 for a hotel
                     total_money_need = 200 * num_house_total_need + 200
                     wallet_size = input("How much cash do you have to spend? ")
                     wallet_size = int(wallet_size)
 
+                    # If the cost is grater then the users wallet program ends
                     if total_money_need < wallet_size:
                         houses = input("How many houses are there to purchase? ")
                         num_houses = int(houses)
@@ -95,7 +99,7 @@ if colour_prompt.lower() == "y":
                                     f"\nPut {num_house_NC_need} house(s) on North Carolina.\n"
                                 )
 
-                            elif num_house_PC_need > 0:
+                            if num_house_PC_need > 0:
                                 print(
                                     f"This will cost ${total_money_need}."
                                     f"\nPurchase 1 hotel and {num_house_total_need} house(s)."
@@ -136,11 +140,3 @@ else:
     print(
         "You cannot purchase a hotel until you own all the properties of a given color group."
     )
-
-
-# D
-# print(
-#     "This will cost $[price].\
-#          Purchase 1 hotel and [number of houses] house(s).\
-#          Put 1 hotel on Pennsylvania and return any houses to the bank."
-# )
