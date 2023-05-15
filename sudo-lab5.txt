@@ -1,0 +1,85 @@
+prompt file_name
+
+open file_name
+read file
+
+// declare for scope
+index <- 0
+
+// parse all words from file into a list
+for each line in file
+	words[index] <- line
+	index += 1
+
+prompt target_word
+
+// declare for scope
+list_length
+mid_index
+mid_word
+
+// loops until word matches target_word
+while word != target_word
+    
+// reset sum / scope
+sum <- 0
+
+    // calc sum
+    foreach (index in list_start - list_end)
+        sum += index
+
+    // Calc list_length, mid_index, mid_word 
+    list_length <- words.length() 
+    mid_index <- round(List_length() / sum)
+    mid_word <- words[mid_index]
+
+    // 
+    if (mid_word < target)
+        list_start <- mid_index
+        list_length - list_start
+
+    elif (mid_word > target)
+        list_end <- mid_index
+        list_length - list_End
+
+put word
+
+// program END
+
+----
+
+Consider a person looking up the word "glitch" in a dictionary.
+At first, the word could be in any of the 688 pages in the dictionary. 
+The user cuts the dictionary in half (to page 344) and notices the word 
+        "magnet" at the top of the page. 
+This word sorts after "glitch." 
+Because we can assume that the dictionary is sorted, we can deduce that the word 
+        "glitch" must be between pages 1 and 343. The user then cuts the remaining 
+        pages in half (to page 171) and finds the word "drift" on that page. 
+
+Since "drift" sorts before "glitch", we can rule out pages 1 through 171.
+Thus, the possible pages must be 172 through 343. 
+The user then cuts to page 257 and finds the word "guidance." Since "guidance" 
+        sorts after "glitch," we can rule out pages 257 through 343. 
+This leaves pages 172 through 256. This process continues until the page containing 
+        "glitch" is located.
+
+----
+
+***Assignment reqirements
+Prompt the user for a file containing an alphabetically ordered collection of words.
+Read the file in JSON format.
+Prompt the user for a word to search for.
+Perform the advanced search described above to locate the word.
+Display a message indicating whether the word exists in the list.
+
+----
+
+if (mid_value < target)
+    List_start = mid_index
+    List_length - List_start
+
+elif (mid_value > target)
+    List_end = mid index
+    List_length - List_End
+
