@@ -44,6 +44,8 @@ sum <- 0
 
 put word
 
+----
+
 // program END
 
 ----
@@ -74,12 +76,3 @@ Perform the advanced search described above to locate the word.
 Display a message indicating whether the word exists in the list.
 
 ----
-
-if (mid_value < target)
-    List_start = mid_index
-    List_length - List_start
-
-elif (mid_value > target)
-    List_end = mid index
-    List_length - List_End
-
