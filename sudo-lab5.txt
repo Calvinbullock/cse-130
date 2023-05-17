@@ -1,4 +1,5 @@
 prompt file_name
+get file_name
 
 open file_name
 read file
@@ -13,6 +14,7 @@ for each line in file
 
 // Declare for scope
 prompt target_word
+get target_word
 list_length <- words.length()
 mid_index
 mid_word
@@ -75,3 +77,13 @@ Perform the advanced search described above to locate the word.
 Display a message indicating whether the word exists in the list.
 
 ----
+
+prompt int
+randNum = num(1-10)
+count = 0
+
+while (randNum != int)
+        prompt int
+        count++
+
+put count
