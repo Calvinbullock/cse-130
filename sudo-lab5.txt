@@ -11,26 +11,24 @@ for each line in file
 	words[index] <- line
 	index += 1
 
+// Declare for scope
 prompt target_word
-
-// declare for scope
-list_length
+list_length <- words.length()
 mid_index
 mid_word
 
 // loops until word matches target_word
 while word != target_word
     
-// reset sum / scope
+// reset sum & for scope
 sum <- 0
 
     // calc sum
     foreach (index in list_start - list_end)
         sum += index
 
-    // Calc list_length, mid_index, mid_word 
-    list_length <- words.length() 
-    mid_index <- round(List_length() / sum)
+    // Calc list_length, mid_index, mid_word  
+    mid_index <- round(List_length() / sum) // truncated value 
     mid_word <- words[mid_index]
 
     // 
