@@ -1,4 +1,4 @@
-prompt file_name
+prompt for file name
 get file_name
 
 open file_name
@@ -13,7 +13,7 @@ for each line in file
 	index += 1
 
 // Declare for scope
-prompt target_word
+prompt enter the word your looking for
 get target_word
 list_length <- words.length()
 mid_index
