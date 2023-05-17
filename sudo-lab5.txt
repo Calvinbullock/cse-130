@@ -28,7 +28,7 @@ sum <- 0
     foreach (index in list_start - list_end)
         sum += index
 
-    // Calc list_length, mid_index, mid_word  
+    // Calc list_length, mid_index, mid_word 
     mid_index <- round(List_length() / sum) // truncated value 
     mid_word <- words[mid_index]
 
