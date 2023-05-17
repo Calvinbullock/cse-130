@@ -77,13 +77,3 @@ Perform the advanced search described above to locate the word.
 Display a message indicating whether the word exists in the list.
 
 ----
-
-prompt int
-randNum = num(1-10)
-count = 0
-
-while (randNum != int)
-        prompt int
-        count++
-
-put count
