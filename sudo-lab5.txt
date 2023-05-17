@@ -17,6 +17,7 @@ list_length <- words.length()
 mid_index
 mid_word
 
+// TODO what if target is not in list??????
 // loops until word matches target_word
 while word != target_word
     
