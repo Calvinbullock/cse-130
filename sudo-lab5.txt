@@ -18,30 +18,31 @@ get target_word
 list_length <- words.length()
 mid_index
 mid_word
+list_end <- 0
+list_start <- 1
 
-// TODO what if target is not in list??????
-// loops until word matches target_word
-while word != target_word
+// loops until word matches target_word & end is grater then start
+while ((word != target_word) && (list_end > list_start))
     
-// reset sum
-sum <- 0
+        // reset sum
+        sum <- 0
 
-    // calc sum
-    foreach (index in list_start - list_end)
-        sum += index
+        // calc sum
+        foreach (index in list_start - list_end)
+                sum += index
 
-    // Calc list_length, mid_index, mid_word 
-    mid_index <- round(List_length() / sum) // truncated value
-    mid_word <- words[mid_index]
+        // Calc list_length, mid_index, mid_word 
+        mid_index <- round(List_length() / sum) // truncated value
+        mid_word <- words[mid_index]
 
-    // 
-    if (mid_word < target)
-        list_start <- mid_index
-        list_length - list_start
+        // 
+        if (mid_word < target)
+                list_start <- mid_index
+                list_length - list_start
 
-    elif (mid_word > target)
-        list_end <- mid_index
-        list_length - list_End
+        elif (mid_word > target)
+                list_end <- mid_index
+                list_length - list_End
 
 put word
 
