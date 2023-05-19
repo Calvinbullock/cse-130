@@ -23,7 +23,7 @@ mid_word
 // loops until word matches target_word
 while word != target_word
     
-// reset sum & for scope
+// reset sum
 sum <- 0
 
     // calc sum
@@ -31,7 +31,7 @@ sum <- 0
         sum += index
 
     // Calc list_length, mid_index, mid_word 
-    mid_index <- round(List_length() / sum) // truncated value 
+    mid_index <- round(List_length() / sum) // truncated value
     mid_word <- words[mid_index]
 
     // 
