@@ -20,7 +20,43 @@ import itertools
 
 def main():
     # file_name = input("PLease enter file name: ")
-    file_name = "languages.json"  # TODO quick tesing use
+
+    # # TODO uncoment for production
+    # # Gets user input then calls search function on it
+    # target_word = input(f"Enter the langwage your looking for: ")
+    # search(dict.array, target_word)
+
+    # For testing
+    word = search(open_file("Lab06.empty.json"), "'")
+    print(word == "", "''")
+
+    word = search(open_file("Lab06.trivial.json"), "'trivial'")
+    print(word == "trivial", "'trivial'")
+
+    word = search(open_file("Lab06.trivial.json"), "")
+    print(word == "", "''")
+
+    word = search(open_file("Lab06.languages.json"), "C++")
+    print(word == "C++", "'C++'")
+
+    word = search(open_file("Lab06.languages.json"), "Lisp")
+    print(word == "Lisp", "'Lisp'")
+
+    word = search(open_file("Lab06.countries.json"), "United States of America")
+    print(word == "United States of America", "'United States of America'")
+
+    word = search(open_file("Lab06.countries.json"), "United States")
+    print(word == "United States", "'United States'")
+
+    # # Test cases key
+    # Empty list	        Lab06.empty.json	    Empty	                    No
+    # Single item found	    Lab06.trivial.json	    trivial	                    Yes
+    # Single item not found	Lab06.trivial.json	    missing	                    No
+    # Small list found	    Lab06.languages.json	C++	                        Yes
+    # Small list not found	Lab06.languages.json	Lisp	                    No
+    # Big list found	    Lab06.countries.json	United States of America	Yes
+    # Big list not found	Lab06.countries.json	United States	            No
+
 
 def open_file(file_name):
     # Opens the file Lab02,json
