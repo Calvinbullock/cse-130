@@ -22,24 +22,20 @@ def main():
     # file_name = input("PLease enter file name: ")
     file_name = "languages.json"  # TODO quick tesing use
 
-    # Opens the file Lab02,json 
+def open_file(file_name):
+    # Opens the file Lab02,json
     try:
         file = open(file_name)
+        data = file.read()
+        dict = json.loads(data)
+
+        # Closes file.
+        file.close()
+
     except:
         print("Could not find the file, please check file and try again ")
 
-    # Converts file to python dictinary.
-    data = file.read()
-    dict = json.loads(data)
-    file.close()  # TODO might close to soon
-
-    # # TODO uncoment for production
-    # # Gets user input then calls search function on it
-    # target_word = input(f"Enter the langwage your looking for: ")
-    # search(dict.array, target_word)
-
-    # for testing
-    search(dict["array"], "C#")
+    return dict["array"]
 
 def search(array, target_word):
     """ """
