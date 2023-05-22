@@ -51,7 +51,7 @@ def search(array, target_word):
         mid_index = round((list_end + list_start) / 2)
 
         #  Calc list_length, mid_index, mid_word
-        mid_word = array[mid_index - 1]
+        mid_word = array[mid_index]
 
         # Check if mid_word is more then target
         if mid_word < target_word:
@@ -61,6 +61,7 @@ def search(array, target_word):
         elif mid_word > target_word:
             list_end = mid_index - 1
 
-    print(f"target word {target_word}, found index {mid_word}")
+    return mid_word
+
 
 main()
