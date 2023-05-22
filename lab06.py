@@ -42,7 +42,7 @@ def search(array, target_word):
     # Declare for scope
     list_start = 0
     list_end = len(array)
-    mid_word = ""
+    mid_word = "null"
 
     # Loops until word matches mid_word or until end is grater then start
     while (mid_word != target_word) and (list_end > list_start):
