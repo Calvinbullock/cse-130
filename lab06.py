@@ -81,7 +81,6 @@ def search(array, target_word):
 
     # Loops until word matches mid_word or until end is grater then start
     while (mid_word != target_word) and (list_end > list_start):
-
         # Calc mid_index
         mid_index = round((list_end + list_start) / 2)
 
