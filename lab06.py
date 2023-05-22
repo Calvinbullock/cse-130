@@ -6,6 +6,11 @@
 #      This program searches a list for the content that the user inputs.
 # 4. Algorithmic Efficiency
 #      TODO whitch and why?
+#      TODO whitch and why?
+
+
+#      TODO whitch and why?
+#      TODO whitch and why?
 # 5. What was the hardest part? Be as specific as possible.
 #      It wasn't to bad once I re-figured out the json file
 #      Syntax and interactions.
@@ -17,9 +22,9 @@ import json
 
 
 def main():
-    # file_name = input("PLease enter file name: ")
 
     # # TODO uncoment for production
+    # file_name = input("PLease enter file name: ")
     # # Gets user input then calls search function on it
     # target_word = input(f"Enter the langwage your looking for: ")
     # search(dict.array, target_word)
