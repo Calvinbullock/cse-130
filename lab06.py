@@ -22,61 +22,49 @@ def main():
     # file_name = input("PLease enter file name: ")
     file_name = "languages.json"  # TODO quick tesing use
 
-    # Opens the file Lab02,json and converts it to python dictinary.
+    # Opens the file Lab02,json 
     try:
-        # Opens the file Lab02,json and converts it to python dictinary.
         file = open(file_name)
     except:
         print("Could not find the file, please check file and try again ")
 
+    # Converts file to python dictinary.
     data = file.read()
     dict = json.loads(data)
     file.close()  # TODO might close to soon
 
-    # TODO uncoment for production
-    # Gets user input then calls search function on it
+    # # TODO uncoment for production
+    # # Gets user input then calls search function on it
     # target_word = input(f"Enter the langwage your looking for: ")
     # search(dict.array, target_word)
 
     # for testing
-    search(dict["array"], "c#")
-
+    search(dict["array"], "C#")
 
 def search(array, target_word):
     """ """
-
     # Declare for scope
     list_start = 0
     list_end = len(array)
-    found_target = ""
+    mid_word = ""
 
-    # Loops until word matches target_word & end is grater then start
-    while (found_target != target_word) and (list_end > list_start):
-        # Reset sum, but keep it in scope
-        sum = 0
+    # Loops until word matches mid_word or until end is grater then start
+    while (mid_word != target_word) and (list_end > list_start):
 
-        # Calc sum
-        # Found this loop method here:
-        # https://stackoverflow.com/questions/8671280/pythonic-way-to-iterate-over-part-of-a-list
-        for line in itertools.islice(array, list_start, list_end):
-            mid_index = round((list_end + list_end) / 2)
+        # Calc mid_index
+        mid_index = round((list_end + list_start) / 2)
 
         #  Calc list_length, mid_index, mid_word
-        print(f"L74- '{mid_index}', len- '{len(array)}'")
         mid_word = array[mid_index - 1]
 
-        #
+        # Check if mid_word is more then target
         if mid_word < target_word:
-            print(f"79")
             list_start = mid_index + 1
-            list_length = list_length - list_start
 
+        # Check if mid_word is less then target
         elif mid_word > target_word:
-            print(f"84")
             list_end = mid_index - 1
-            list_length = list_length - list_end
 
     print(f"target word {target_word}, found index {mid_word}")
-
 
 main()
