@@ -5,13 +5,12 @@
 # 3. Assignment Description:
 #      This program searches a list for the content that the user inputs.
 # 4. Algorithmic Efficiency
-#      -Identify the algorithmic efficiency and tell why it is as you say it is-
-#
+#      TODO whitch and why?
 # 5. What was the hardest part? Be as specific as possible.
-#      -a paragraph or two about how the assignment went for you-
-#
+#      It wasn't to bad once I re-figured out the json file
+#      Syntax and interactions.
 # 6. How long did it take for you to complete the assignment?
-#      -total time in hours including reading the assignment and submitting the program-
+#      2 hours
 
 
 import json
