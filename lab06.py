@@ -5,12 +5,8 @@
 # 3. Assignment Description:
 #      This program searches a list for the content that the user inputs.
 # 4. Algorithmic Efficiency
-#      TODO whitch and why?
-#      TODO whitch and why?
-
-
-#      TODO whitch and why?
-#      TODO whitch and why?
+#      Linear, the run time of the program is tied to the length of the data set. 
+#      If the data set is twice as long the run time is twice as long.
 # 5. What was the hardest part? Be as specific as possible.
 #      It wasn't to bad once I re-figured out the json file
 #      Syntax and interactions.
