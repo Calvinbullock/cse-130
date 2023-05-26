@@ -5,7 +5,7 @@
 # 3. Assignment Description:
 #      This program searches a list for the content that the user inputs.
 # 4. Algorithmic Efficiency
-#      Linear, the run time of the program is tied to the length of the data set. 
+#      Linear, the run time of the program is tied to the length of the data set.
 #      If the data set is twice as long the run time is twice as long.
 # 5. What was the hardest part? Be as specific as possible.
 #      It wasn't to bad once I re-figured out the json file
@@ -18,7 +18,6 @@ import json
 
 
 def main():
-
     # # TODO uncoment for production
     # file_name = input("PLease enter file name: ")
     # # Gets user input then calls search function on it
@@ -71,6 +70,7 @@ def open_file(file_name):
         print("Could not find the file, please check file and try again ")
 
     return dict["array"]
+
 
 def search(array, target_word):
     """ """
