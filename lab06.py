@@ -19,16 +19,26 @@ import json
 
 def main():
     # # TODO uncoment for production
-    # file_name = input("PLease enter file name: ")
-    # # Gets user input then calls search function on it
-    # target_word = input(f"Enter the langwage your looking for: ")
-    # search(dict.array, target_word)
+    # Gets user input for file and target word
+    file_name = input("PLease enter file name: ")
+    target_word = input(f"Enter the langwage your looking for: ")
+
+    # passes file name to open file, open file returns the array
+    array = open_file(file_name)
+
+    # Passes teh array and target word to search, returns the found word
+    word = search(array, target_word)
+
+    # prints the word or null in it's not found
+    print(word)
+    print()
+
 
     # For testing
-    word = search(open_file("Lab06.empty.json"), "'")
+    word = search(open_file("Lab06.empty.json"), "")
     print(word == "", "''")
 
-    word = search(open_file("Lab06.trivial.json"), "'trivial'")
+    word = search(open_file("Lab06.trivial.json"), "trivial")
     print(word == "trivial", "'trivial'")
 
     word = search(open_file("Lab06.trivial.json"), "")
