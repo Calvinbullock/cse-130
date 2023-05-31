@@ -27,21 +27,23 @@ int tempNum = -1
 // loops until list is sorted....
 while list_length > 0
 
-    // finds bigest number in list
-    while i < list_length
-        // find bigest num set it at end of list
-        if list[i] > bigTempNum
-            // set bigest num
-            bigTempNum = list[i]
+    index = 0
 
-        i++
+    // finds bigest number in list
+    while index < list_length
+        // find bigest num set it at end of list
+        if list[index] > bigTempNum
+            // set bigest num
+            bigTempNum = list[index]
+
+        index++
 
     // stores the index before the "last" index 
     tempNum = list[list_length-1]
 
     // Index swap
     list[list_length-1] = tempNum
-    list[i] = bigTempNum
+    list[index] = bigTempNum
 
     // Knocks 1 off the list length
     list_length--
