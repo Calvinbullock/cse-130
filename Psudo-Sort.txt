@@ -1,0 +1,49 @@
+Prompt the user for a file containing a collection of words.
+Read the file in JSON format.
+Perform a sort on the list of words.
+Display the contents of the list on the screen.
+
+
+prompt for file name
+get file_name
+
+open file_name
+read file
+
+// declare for scope
+index <- 0
+
+// parse all words from file into a list
+for each line in file
+	words[index] <- line
+	index += 1
+
+// Declare for scope
+list_length <- words.length()
+
+int bigTempNum = -1
+int tempNum = -1
+
+// loops until list is sorted....
+while list_length > 0
+
+    // finds bigest number in list
+    while i < list_length
+        // find bigest num set it at end of list
+        if list[i] > bigTempNum
+            // set bigest num
+            bigTempNum = list[i]
+
+        i++
+
+    // stores the index before the "last" index 
+    tempNum = list[list_length-1]
+
+    // Index swap
+    list[list_length-1] = tempNum
+    list[i] = bigTempNum
+
+    // Knocks 1 off the list length
+    list_length--
+
+put list
