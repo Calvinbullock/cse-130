@@ -13,10 +13,12 @@ read file
 // declare for scope
 index <- 0
 
-// parse all words from file into a list
+// parse contnet into list
 for each line in file
 	words[index] <- line
 	index += 1
+
+close file
 
 // Declare for scope
 list_length <- words.length()
