@@ -10,13 +10,10 @@ get file_name
 open file_name
 read file
 
-// declare for scope
-index <- 0
-
 // parse contnet into list
-for each line in file
-	words[index] <- line
-	index += 1
+open file_name
+data = read file
+list = data
 
 close file
 
