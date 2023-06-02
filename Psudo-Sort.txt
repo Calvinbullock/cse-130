@@ -22,30 +22,37 @@ close file
 
 // Declare for scope
 list_length <- words.length()
-
-int bigTempNum = -1
 int tempNum = -1
+int tempIndex = -1					
+
 
 // loops until list is sorted....
 while list_length > 0
 
     index = 0
+    int bigTempNum = -1
+
 
     // finds bigest number in list
     while index < list_length
+
         // find bigest num set it at end of list
         if list[index] > bigTempNum
+
             // set bigest num
             bigTempNum = list[index]
+            tempIndex = index
 
         index++
 
     // stores the index before the "last" index 
+    // TODO might need an if heere to stop temp 
+    // and big temp from being the same… 
     tempNum = list[list_length-1]
 
     // Index swap
-    list[list_length-1] = tempNum
-    list[index] = bigTempNum
+    list[list_length-1] = bigTempNum
+    list[tempIndex] = tempNum
 
     // Knocks 1 off the list length
     list_length--
