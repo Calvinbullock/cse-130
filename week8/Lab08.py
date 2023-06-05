@@ -18,37 +18,47 @@ def main():
     # sort(array)
     # print(array)
 
+    # I call my sort then the built in sort and compare them for testing
     # test 1
     array1 = open_file("Lab08.empty.json")
-    array1_test = open_file("Lab06.empty.json")
-    sort(array1)
+    array1_test = open_file("Lab08.empty.json")
+    my_sort(array1)
+    array1_test.sort()
     print(array1 == array1_test)
     print(array1)
     print()
 
     # test 2
     array1 = open_file("Lab08.trivial.json")
-    sort(array1)
-    print(array1)
+    array1_test = open_file("Lab08.trivial.json")
+    my_sort(array1)
+    array1_test.sort()
+    print(array1 == array1_test)
     print()
 
     # test 3
     array1 = open_file("Lab08.languages.json")
     array1_test = open_file("Lab06.languages.json")
-    sort(array1)
+    my_sort(array1)
     print(array1 == array1_test)
     print(array1)
     print()
 
     # test 4
     array1 = open_file("Lab08.states.json")
-    sort(array1)
+    array1_test = open_file("Lab08.states.json")
+    my_sort(array1)
+    array1_test.sort()
+    print(array1 == array1_test)
     print(array1)
     print()
 
     # test 5
     array1 = open_file("Lab08.cities.json")
-    sort(array1)
+    array1_test = open_file("Lab08.cities.json")
+    my_sort(array1)
+    array1_test.sort()
+    print(array1 == array1_test)
     print(array1)
     print()
 
@@ -69,7 +79,7 @@ def open_file(file_name):
     return dict["array"]
 
 
-def sort(array):
+def my_sort(array):
     """
     This takes an array and sorts it.
     """
