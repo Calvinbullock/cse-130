@@ -3,21 +3,24 @@
 # 2. Assignment Name:
 #      Lab 08: Sort
 # 3. Assignment Description:
-#      -describe what this program is meant to do-
+#      This program will sort a list pulled from a json file
 # 4. What was the hardest part? Be as specific as possible.
-#      -a paragraph or two about how the assignment went for you-
+#      Figuring out what you ment with your sudo code and translating it 
+#      into python code 
 # 5. How long did it take for you to complete the assignment?
-#      -total time in hours including reading the assignment and submitting the program-
+#      2 Hours
 
 import json
 
 
 def main():
+    # For production
     # file_name = input("please input file name: ")
     # array = open_file(file_name)
     # sort(array)
     # print(array)
 
+    # Comment out in Production
     # I call my sort then the built in sort and compare them for testing
     # test 1
     array1 = open_file("Lab08.empty.json")
