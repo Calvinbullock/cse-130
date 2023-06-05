@@ -20,54 +20,68 @@ def main():
     # sort(array)
     # print(array)
 
-    # Comment out in Production
+    # ------------ ------------------------- ------------ #
+    # ------------ Comment out in Production ------------ #
+    # ------------ ------------------------- ------------ #
     # I call my sort then the built in sort and compare them for testing
-    # test 1
+
+    # ---------------------- test 1 ---------------------- # 
     array1 = open_file("Lab08.empty.json")
     array1_test = open_file("Lab08.empty.json")
+    
     my_sort(array1)
     array1_test.sort()
+
     print(array1 == array1_test)
     print(array1)
     print()
 
-    # test 2
+    # ---------------------- test 2 ---------------------- # 
     array1 = open_file("Lab08.trivial.json")
     array1_test = open_file("Lab08.trivial.json")
+
     my_sort(array1)
     array1_test.sort()
+
     print(array1 == array1_test)
     print()
 
-    # test 3
+    # ---------------------- test 3 ---------------------- # 
     array1 = open_file("Lab08.languages.json")
-    array1_test = open_file("Lab06.languages.json")
+    array1_test = open_file("Lab08.languages.json")
+
     my_sort(array1)
+    array1_test.sort()
+
     print(array1 == array1_test)
     print(array1)
     print()
 
-    # test 4
+    # ---------------------- test 4 ---------------------- # 
     array1 = open_file("Lab08.states.json")
     array1_test = open_file("Lab08.states.json")
+
     my_sort(array1)
     array1_test.sort()
+
     print(array1 == array1_test)
     print(array1)
     print()
 
-    # test 5
+    # ---------------------- test 5 ---------------------- # 
     array1 = open_file("Lab08.cities.json")
     array1_test = open_file("Lab08.cities.json")
+
     my_sort(array1)
     array1_test.sort()
+
     print(array1 == array1_test)
     print(array1)
     print()
 
 
 def open_file(file_name):
-    # Opens the file Lab02,json
+    # Opens a json file and returns an array from it
     try:
         file = open(file_name)
         data = file.read()
@@ -86,10 +100,11 @@ def my_sort(array):
     """
     This takes an array and sorts it.
     """
-    # loops throught the array backwards
+    # Loops throught the array backwards
     for i_pivot in range(len(array) - 1, 0, -1):
         i_largest = 0
 
+        # Loops to find highest value ___ in array
         for i_check in range(0, i_pivot):
             if array[i_check] > array[i_largest]:
                 i_largest = i_check
