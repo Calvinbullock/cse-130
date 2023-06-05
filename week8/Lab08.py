@@ -14,7 +14,9 @@ import json
 
 
 def main():
-    # For production
+    # ------------ -------------------------- ------------ #
+    # ------------ ----- For production ----- ------------ #
+    # ------------ -------------------------- ------------ #
     # file_name = input("please input file name: ")
     # array = open_file(file_name)
     # sort(array)
