@@ -87,6 +87,8 @@ def main():
 
 
 def open_file(file_name):
+    assert type(file_name) == type("")
+
     # Opens a json file and returns an array from it
     try:
         file = open(file_name)
@@ -99,6 +101,7 @@ def open_file(file_name):
     except:
         print("Could not find the file, please check file and try again ")
 
+    assert type(dict["array"]) == type([])
     return dict["array"]
 
 
@@ -130,5 +133,9 @@ def sort(array):
             array[i_largest] = small_temp
             array[i_pivot] = large_temp
 
+    if __debug__:
+        array_test = array
+        array_test.sort()
+        assert array == array_test
 
 main()
