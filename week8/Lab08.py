@@ -5,8 +5,8 @@
 # 3. Assignment Description:
 #      This program will sort a list pulled from a json file
 # 4. What was the hardest part? Be as specific as possible.
-#      Figuring out what you ment with your sudo code and translating it 
-#      into python code 
+#      Figuring out what you ment with your sudo code and translating it
+#      into python code
 # 5. How long did it take for you to complete the assignment?
 #      2 Hours
 
@@ -27,10 +27,10 @@ def main():
     # ------------ -------------------------- ------------ #
     # I call my sort then the built in sort and compare them for testing
 
-    # ---------------------- test 1 ---------------------- # 
+    # ---------------------- test 1 ---------------------- #
     array1 = open_file("Lab08.empty.json")
     array1_test = open_file("Lab08.empty.json")
-    
+
     sort(array1)
     array1_test.sort()
 
@@ -38,7 +38,7 @@ def main():
     print(array1)
     print()
 
-    # ---------------------- test 2 ---------------------- # 
+    # ---------------------- test 2 ---------------------- #
     array1 = open_file("Lab08.trivial.json")
     array1_test = open_file("Lab08.trivial.json")
 
@@ -48,7 +48,7 @@ def main():
     print(array1 == array1_test)
     print()
 
-    # ---------------------- test 3 ---------------------- # 
+    # ---------------------- test 3 ---------------------- #
     array1 = open_file("Lab08.languages.json")
     array1_test = open_file("Lab08.languages.json")
 
@@ -59,7 +59,7 @@ def main():
     print(array1)
     print()
 
-    # ---------------------- test 4 ---------------------- # 
+    # ---------------------- test 4 ---------------------- #
     array1 = open_file("Lab08.states.json")
     array1_test = open_file("Lab08.states.json")
 
@@ -70,7 +70,7 @@ def main():
     print(array1)
     print()
 
-    # ---------------------- test 5 ---------------------- # 
+    # ---------------------- test 5 ---------------------- #
     array1 = open_file("Lab08.cities.json")
     array1_test = open_file("Lab08.cities.json")
 
@@ -81,7 +81,7 @@ def main():
     print(array1)
     print()
 
-    # ------------------- Assert test 6 ------------------- # 
+    # ------------------- Assert test 6 ------------------- #
     # num = 0
     # sort(num)
 
@@ -138,5 +138,6 @@ def sort(array):
         array_test = array
         array_test.sort()
         assert array == array_test
+
 
 main()
