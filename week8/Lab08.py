@@ -134,6 +134,7 @@ def sort(array):
             array[i_pivot] = large_temp
 
     if __debug__:
+        # TODO this prob makes all the test cases above obsolete??
         array_test = array
         array_test.sort()
         assert array == array_test
