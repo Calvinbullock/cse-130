@@ -31,7 +31,7 @@ def main():
     array1 = open_file("Lab08.empty.json")
     array1_test = open_file("Lab08.empty.json")
     
-    my_sort(array1)
+    sort(array1)
     array1_test.sort()
 
     print(array1 == array1_test)
@@ -42,7 +42,7 @@ def main():
     array1 = open_file("Lab08.trivial.json")
     array1_test = open_file("Lab08.trivial.json")
 
-    my_sort(array1)
+    sort(array1)
     array1_test.sort()
 
     print(array1 == array1_test)
@@ -52,7 +52,7 @@ def main():
     array1 = open_file("Lab08.languages.json")
     array1_test = open_file("Lab08.languages.json")
 
-    my_sort(array1)
+    sort(array1)
     array1_test.sort()
 
     print(array1 == array1_test)
@@ -63,7 +63,7 @@ def main():
     array1 = open_file("Lab08.states.json")
     array1_test = open_file("Lab08.states.json")
 
-    my_sort(array1)
+    sort(array1)
     array1_test.sort()
 
     print(array1 == array1_test)
@@ -74,7 +74,7 @@ def main():
     array1 = open_file("Lab08.cities.json")
     array1_test = open_file("Lab08.cities.json")
 
-    my_sort(array1)
+    sort(array1)
     array1_test.sort()
 
     print(array1 == array1_test)
@@ -98,7 +98,7 @@ def open_file(file_name):
     return dict["array"]
 
 
-def my_sort(array):
+def sort(array):
     """
     This takes an array and sorts it.
     """
