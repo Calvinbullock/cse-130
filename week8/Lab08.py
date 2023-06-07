@@ -82,8 +82,8 @@ def main():
     print()
 
     # ------------------- Assert test 6 ------------------- # 
-    num = 0
-    sort(num)
+    # num = 0
+    # sort(num)
 
 
 def open_file(file_name):
