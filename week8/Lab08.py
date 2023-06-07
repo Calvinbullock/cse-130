@@ -81,6 +81,10 @@ def main():
     print(array1)
     print()
 
+    # ------------------- Assert test 6 ------------------- # 
+    num = 0
+    sort(num)
+
 
 def open_file(file_name):
     # Opens a json file and returns an array from it
@@ -102,12 +106,18 @@ def sort(array):
     """
     This takes an array and sorts it.
     """
+    assert type(array) == type([])
+
     # Loops throught the array backwards
     for i_pivot in range(len(array) - 1, 0, -1):
         i_largest = 0
 
+        assert 0 <= i_pivot < len(array)
+
         # Loops to find highest value ___ in array
         for i_check in range(0, i_pivot):
+            assert 0 <= i_check < len(array)
+
             if array[i_check] > array[i_largest]:
                 i_largest = i_check
 
