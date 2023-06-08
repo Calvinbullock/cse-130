@@ -29,7 +29,7 @@ def main():
         # ------------ -------------------------- ------------ #
         # I call my sort then the built in sort and compare them for testing
 
-        # ---------------------- test 1 ---------------------- #
+        print("# ---------------------- test 1 ---------------------- #")
         array1 = open_file("Lab08.empty.json")
         array1_test = open_file("Lab08.empty.json")
 
@@ -40,7 +40,7 @@ def main():
         print(array1)
         print()
 
-        # ---------------------- test 2 ---------------------- #
+        print("# ---------------------- test 2 ---------------------- #")
         array1 = open_file("Lab08.trivial.json")
         array1_test = open_file("Lab08.trivial.json")
 
@@ -51,7 +51,7 @@ def main():
         print(array1)
         print()
 
-        # ---------------------- test 3 ---------------------- #
+        print("# ---------------------- test 3 ---------------------- #")
         array1 = open_file("Lab08.languages.json")
         array1_test = open_file("Lab08.languages.json")
 
@@ -62,7 +62,7 @@ def main():
         print(array1)
         print()
 
-        # ---------------------- test 4 ---------------------- #
+        print("# ---------------------- test 4 ---------------------- #")
         array1 = open_file("Lab08.states.json")
         array1_test = open_file("Lab08.states.json")
 
@@ -73,7 +73,7 @@ def main():
         print(array1)
         print()
 
-        # ---------------------- test 5 ---------------------- #
+        print("# ---------------------- test 5 ---------------------- #")
         array1 = open_file("Lab08.cities.json")
         array1_test = open_file("Lab08.cities.json")
 
