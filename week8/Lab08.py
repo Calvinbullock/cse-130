@@ -17,73 +17,75 @@ def main():
     # ------------ -------------------------- ------------ #
     # ------------ ----- For production ----- ------------ #
     # ------------ -------------------------- ------------ #
-    # file_name = input("please input file name: ")
-    # array = open_file(file_name)
-    # sort(array)
-    # print(array)
+    if __debug__ == False:
+        file_name = input("please input file name: ")
+        array = open_file(file_name)
+        sort(array)
+        print(array)
 
-    # ------------ -------------------------- ------------ #
-    # ------------- Comment out in Production ------------ #
-    # ------------ -------------------------- ------------ #
-    # I call my sort then the built in sort and compare them for testing
+    if __debug__:
+        # ------------ -------------------------- ------------ #
+        # ------------- Comment out in Production ------------ #
+        # ------------ -------------------------- ------------ #
+        # I call my sort then the built in sort and compare them for testing
 
-    # ---------------------- test 1 ---------------------- #
-    array1 = open_file("Lab08.empty.json")
-    array1_test = open_file("Lab08.empty.json")
+        # ---------------------- test 1 ---------------------- #
+        array1 = open_file("Lab08.empty.json")
+        array1_test = open_file("Lab08.empty.json")
 
-    sort(array1)
-    array1_test.sort()
+        sort(array1)
+        array1_test.sort()
 
-    print(array1 == array1_test)
-    print(array1)
-    print()
+        print(array1 == array1_test)
+        print(array1)
+        print()
 
-    # ---------------------- test 2 ---------------------- #
-    array1 = open_file("Lab08.trivial.json")
-    array1_test = open_file("Lab08.trivial.json")
+        # ---------------------- test 2 ---------------------- #
+        array1 = open_file("Lab08.trivial.json")
+        array1_test = open_file("Lab08.trivial.json")
 
-    sort(array1)
-    array1_test.sort()
+        sort(array1)
+        array1_test.sort()
 
-    print(array1 == array1_test)
-    print()
+        print(array1 == array1_test)
+        print()
 
-    # ---------------------- test 3 ---------------------- #
-    array1 = open_file("Lab08.languages.json")
-    array1_test = open_file("Lab08.languages.json")
+        # ---------------------- test 3 ---------------------- #
+        array1 = open_file("Lab08.languages.json")
+        array1_test = open_file("Lab08.languages.json")
 
-    sort(array1)
-    array1_test.sort()
+        sort(array1)
+        array1_test.sort()
 
-    print(array1 == array1_test)
-    print(array1)
-    print()
+        print(array1 == array1_test)
+        print(array1)
+        print()
 
-    # ---------------------- test 4 ---------------------- #
-    array1 = open_file("Lab08.states.json")
-    array1_test = open_file("Lab08.states.json")
+        # ---------------------- test 4 ---------------------- #
+        array1 = open_file("Lab08.states.json")
+        array1_test = open_file("Lab08.states.json")
 
-    sort(array1)
-    array1_test.sort()
+        sort(array1)
+        array1_test.sort()
 
-    print(array1 == array1_test)
-    print(array1)
-    print()
+        print(array1 == array1_test)
+        print(array1)
+        print()
 
-    # ---------------------- test 5 ---------------------- #
-    array1 = open_file("Lab08.cities.json")
-    array1_test = open_file("Lab08.cities.json")
+        # ---------------------- test 5 ---------------------- #
+        array1 = open_file("Lab08.cities.json")
+        array1_test = open_file("Lab08.cities.json")
 
-    sort(array1)
-    array1_test.sort()
+        sort(array1)
+        array1_test.sort()
 
-    print(array1 == array1_test)
-    print(array1)
-    print()
+        print(array1 == array1_test)
+        print(array1)
+        print()
 
-    # ------------------- Assert test 6 ------------------- #
-    # num = 0
-    # sort(num)
+        # ------------------- Assert test 6 ------------------- #
+        # num = 0
+        # sort(num)
 
 
 def open_file(file_name):
