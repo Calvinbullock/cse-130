@@ -48,6 +48,7 @@ def main():
         array1_test.sort()
 
         print(array1 == array1_test)
+        print(array1)
         print()
 
         # ---------------------- test 3 ---------------------- #
