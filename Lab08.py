@@ -29,7 +29,7 @@ def sort(array):
     This takes an array and sorts it.
     """
     # loops throught the array backwards 
-    for i_pivot in range(array.length - 1, 0, -1):
+    for i_pivot in range(len(array) - 1, 0, -1):
         i_largest = 0
 
         for i_check in range(0, i_pivot-1):
