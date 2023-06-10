@@ -21,7 +21,9 @@ def main():
         file_name = input("please input file name: ")
         array = open_file(file_name)
         sort(array)
-        print(array)
+
+        for i in array:
+            print(i)
 
     if __debug__:
         # ------------ -------------------------- ------------ #
