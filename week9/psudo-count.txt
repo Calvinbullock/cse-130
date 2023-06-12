@@ -1,0 +1,23 @@
+F1 = 2
+
+F2 = 1
+
+Fn = Fn-1 + Fn-2
+
+{ 2, 1, 3, 4, 7, 11 }
+
+//////
+
+
+prompt for target value
+get target value
+
+array_count = [2,1]
+
+value_1 = array_count[len(array_count) - 2]
+value_2 = array_count[len(array_count) - 1]
+
+array_count.append(value_1 + value_2)
+
+if array_count[len(array_count - 1)] == target
+    put array_count[len(array_count - 1)]
