@@ -6,18 +6,19 @@ Fn = Fn-1 + Fn-2
 
 { 2, 1, 3, 4, 7, 11 }
 
-//////
+//////////////////////
 
 
-prompt for target value
-get target value
+prompt for target index
+get target index
 
-array_count = [2,1]
+francois_array = [2,1]
+while francois_array.length() != target_i
 
-value_1 = array_count[len(array_count) - 2]
-value_2 = array_count[len(array_count) - 1]
+    value_1 = francois_array[len(francois_array) - 2]
+    value_2 = francois_array[len(francois_array) - 1]
 
-array_count.append(value_1 + value_2)
+    francois_array.append(value_1 + value_2)
 
-if array_count[len(array_count - 1)] == target
-    put array_count[len(array_count - 1)]
+if francois_array[len(francois_array - 1)] == target_i
+    put francois_array[target_i]
