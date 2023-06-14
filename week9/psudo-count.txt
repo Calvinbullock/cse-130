@@ -23,6 +23,9 @@ while francois_array.length() != target_i
 if francois_array[len(francois_array - 1)] == target_i
     put francois_array[target_i]
 
+
+// ----------------------------------------------- \\s
+
 // option 0 leave it unchanged
 // option 1 pop the first index -- change loop exit case
 // option 2 ....
