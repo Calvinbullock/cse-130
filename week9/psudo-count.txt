@@ -10,7 +10,7 @@ Fn = Fn-1 + Fn-2
 
 
 prompt for target index
-get target index
+get target_i
 
 francois_array = [2,1]
 while francois_array.length() != target_i
@@ -22,3 +22,7 @@ while francois_array.length() != target_i
 
 if francois_array[len(francois_array - 1)] == target_i
     put francois_array[target_i]
+
+// option 0 leave it unchanged
+// option 1 pop the first index -- change loop exit case
+// option 2 ....
