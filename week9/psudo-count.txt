@@ -1,31 +1,16 @@
-F1 = 2
-
-F2 = 1
-
-Fn = Fn-1 + Fn-2
-
-{ 2, 1, 3, 4, 7, 11 }
-
-//////////////////////
-
-
 prompt for target index
 get target_i
 
+count = 0
 francois_array = [2,1]
-while francois_array.length() != target_i
 
-    value_1 = francois_array[len(francois_array) - 2]
-    value_2 = francois_array[len(francois_array) - 1]
+while count != target_i
 
-    francois_array.append(value_1 + value_2)
+    temp_value = francois_array[0] + francois_array[1] 
+    francois_array[0] = francois_array[1]
+    francois_array[1] = temp_value
 
-if francois_array[len(francois_array - 1)] == target_i
-    put francois_array[target_i]
+    count += 1
 
 
-// ----------------------------------------------- \\s
-
-// option 0 leave it unchanged
-// option 1 pop the first index -- change loop exit case
-// option 2 ....
+put francois_array[target_i]
