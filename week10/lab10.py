@@ -13,6 +13,7 @@
 def main():
     exit = 1
 
+    # Loops until the user gives a proper number
     while exit == 1:
         # Production RUN
         if __debug__ == False:
@@ -20,23 +21,24 @@ def main():
             target_i = int(target_i)
             exit = francois_number(target_i)
 
-        # DEBUG TEST cases
-        if __debug__:
-            exit = francois_number(-1)
-            print(exit)
-            exit = francois_number(0)
-            print(exit)
-            exit = francois_number(1)
-            print(exit)
-            exit = francois_number(2)
-            print(exit)
-            exit = francois_number(9)
-            print(exit)
-            exit = francois_number(100)
-            print(exit)
-            exit = francois_number(200)
-            print(exit)
-            exit = 0
+    # Testing is not in the loop
+    # DEBUG TEST cases
+    if __debug__:
+        exit = francois_number(-1)
+        print(exit)
+        exit = francois_number(0)
+        print(exit)
+        exit = francois_number(1)
+        print(exit)
+        exit = francois_number(2)
+        print(exit)
+        exit = francois_number(9)
+        print(exit)
+        exit = francois_number(100)
+        print(exit)
+        exit = francois_number(200)
+        print(exit)
+            
 
 
 def francois_number(target_i):
