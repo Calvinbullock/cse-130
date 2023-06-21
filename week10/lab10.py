@@ -41,7 +41,7 @@ def francois_number(target_i):
 
     # if the target is further then the 3rd term.
     else:
-        while count < target_i:
+        while count < target_i-1:
             # Take the two values stored in teh array and add them together
             temp_value = francois_array[0] + francois_array[1]
             # Move the array values back with the temp becomeing the 2nd value
