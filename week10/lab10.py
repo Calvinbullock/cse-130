@@ -72,7 +72,7 @@ def francois_number(target):
     assert type(target) == type(1)
 
     # take one off of the input to match array indexs
-    target_i = target - 1 
+    target_i = target - 1
 
     count = 0
     francois_array = [2, 1]
