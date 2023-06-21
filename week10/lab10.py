@@ -38,16 +38,16 @@ def main():
         # print(f"key = 2")
         # francois_number(0)
 
-        print(f"key = 1")
+        print(f"key = 2")
         francois_number(1)
 
-        print(f"key = 3")
+        print(f"key = 1")
         francois_number(2)
 
-        print(f"key = 29")
+        print(f"key = 18")
         francois_number(7)
 
-        print(f"key = 76")
+        print(f"key = 47")
         francois_number(9)
 
         print(f"key = ?")
