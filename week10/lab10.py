@@ -11,25 +11,43 @@
 
 
 def main():
-    # TRUE RUN
-    if __debug__ == False:
-        target_i = input("for target index: ")
-        target_i = int(target_i)
-        francois_number(target_i)
+    exit = 1
 
-    # DEBUG TEST cases
-    if __debug__:
-        francois_number(-1)
-        francois_number(0)
-        francois_number(1)
-        francois_number(2)
-        francois_number(9)
-        francois_number(100)
-        francois_number(200)
+    while exit == 1:
+        # Production RUN
+        if __debug__ == False:
+            target_i = input("for target index: ")
+            target_i = int(target_i)
+            exit = francois_number(target_i)
+
+        # DEBUG TEST cases
+        if __debug__:
+            exit = francois_number(-1)
+            print(exit)
+            exit = francois_number(0)
+            print(exit)
+            exit = francois_number(1)
+            print(exit)
+            exit = francois_number(2)
+            print(exit)
+            exit = francois_number(9)
+            print(exit)
+            exit = francois_number(100)
+            print(exit)
+            exit = francois_number(200)
+            print(exit)
+            exit = 0
 
 
 def francois_number(target_i):
-    assert target_i > - 1
+    assert type(target_i) == type(1)
+
+    if target_i < 0:
+        print(f"Error: number is to small, try again {target_i}.")
+        print()
+        return 1
+
+    assert target_i > -1
 
     count = 1
     francois_array = [2, 1]
@@ -38,6 +56,7 @@ def francois_number(target_i):
     if target_i < 2:
         print(francois_array[target_i])
         print()
+
 
     # if the target is further then the 3rd term.
     else:
@@ -52,5 +71,11 @@ def francois_number(target_i):
 
         print(francois_array[1])
         print()
+        assert type(target_i) == type(1)
+        return 0
+
+    assert type(target_i) == type(1)
+    
+
 
 main()
