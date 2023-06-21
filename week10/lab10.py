@@ -17,17 +17,17 @@ def main():
 
         # Loops until the user gives a proper number
         while exit == 1:
-            target_i = input("for target index: ")
-            target_i = int(target_i)
+            user_input = input("for target index: ")
+            user_input = int(user_input)
 
             # Protects the exit until user enters a tartget grater then 1
-            if target_i < 1:
-                print(f"Error: number is to small, try again {target_i}.")
+            if user_input < 1:
+                print(f"Error: number is to small, try again {user_input}.")
                 print()
             else:
                 exit = 0
 
-        francois_number(target_i)
+        francois_number(user_input)
 
     # DEBUG TEST cases
     if __debug__:
@@ -72,19 +72,19 @@ def francois_number(target):
     assert type(target) == type(1)
 
     # take one off of the input to match array indexs
-    target_i = target - 1
+    target_n = target - 1
 
     count = 0
     francois_array = [2, 1]
 
     # if the target is less then 2 term.
-    if target_i < 2:
-        print(f"Francois number {target} is {francois_array[target_i]}")
+    if target_n < 2:
+        print(f"Francois number {target} is {francois_array[target_n]}")
         print()
 
     # if the target is further then the 3rd term.
     else:
-        while count < target_i - 1:
+        while count < target_n - 1:
             # Take the two values stored in teh array and add them together
             temp_value = francois_array[0] + francois_array[1]
 
@@ -97,7 +97,7 @@ def francois_number(target):
         print(f"Francois number {target} is {francois_array[1]}")
         print()
 
-    assert type(target_i) == type(1)
+    assert type(target_n) == type(1)
 
 
 main()
