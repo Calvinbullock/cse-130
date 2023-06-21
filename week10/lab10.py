@@ -66,7 +66,7 @@ def francois_number(target):
     # place in francois number sequence.
     #
     # Paramiters
-    #   target: int the target term of francois number sequence, should be grater then 0
+    #   target (int): The target term of francois number sequence, should be grater then 0
 
     assert target > 0
     assert type(target) == type(1)
