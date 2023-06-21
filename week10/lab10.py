@@ -7,7 +7,7 @@
 # 4. What was the hardest part? Be as specific as possible.
 #      -TODO a paragraph or two about how the assignment went for you-
 # 5. How long did it take for you to complete the assignment?
-#      -TODO total time in hours including reading the assignment and submitting the program-
+#      2 hours
 
 
 def main():
