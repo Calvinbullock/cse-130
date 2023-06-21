@@ -5,7 +5,7 @@
 # 3. Assignment Description:
 #      This program computes the nth François number.
 # 4. What was the hardest part? Be as specific as possible.
-#      Finding meaningful places to put asserts
+#      Finding meaningful places to put asserts and decideing where to start my function, at 0 or 1
 # 5. How long did it take for you to complete the assignment?
 #      2 hours
 
