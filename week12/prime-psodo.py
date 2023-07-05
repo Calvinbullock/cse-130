@@ -1,37 +1,16 @@
 # Calvin Bullock
 
-target_value = 25
+# TODO 2, 3 are being flaged -- this is bad
+# TODO set the invaled int to something we can flag ex. 0
 
-count_list = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-]
-# { 2, 3, 5, 7, 11, 13, 17, 19 } -- primes
+target_value = input("Enter your nth number you would like to compute until: ")
+target_value = int(target_value)
 
+count_list = []
 white_index_list = []
+
+for num in range(0, target_value):
+    count_list.append(num)
 
 for index, value in enumerate(count_list):  # iterate count list
     # set prime defualt
