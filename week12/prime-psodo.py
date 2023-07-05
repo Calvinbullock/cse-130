@@ -27,6 +27,7 @@ for num in range(0, target_value):
 for index, value in enumerate(count_list):
     # Prime but special and hard to compute as so
     if value == 2 or value == 3 or value == 5 or value == 7:
+        # special prime's
         pass
 
     # Not prime but special and hard to compute as so

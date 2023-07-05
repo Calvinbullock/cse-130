@@ -1,17 +1,45 @@
-this        {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25}
-to this     {2, 3, 5, 7, 11, 13, 17, 19}
+# Calvin Bullock
 
-count by 1, 2,3,4 ect
-add indexs that are croseed out to an array
+import math
 
+# Take user input
+target_value = input("Enter your nth number you would like to compute until: ")
+target_value = int(target_value)
 
-count_list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25}
+count_list = []
 
+# Create array until target Num
+for num in range(0, target_value):
+    count_list.append(num)
 
-count_2s
-count_3s
-count_5s
+# Iterate count list
+for index, value in enumerate(count_list):
+    # Prime but special and hard to compute as so
+    if value == 2 or value == 3 or value == 5 or value == 7:
+        pass
 
-foreach index, num in enumerate(count_list)
+    # Not prime but special and hard to compute as so
+    elif value == 0 or value == 1:
+        count_list[index] = 0
 
-    if num == index
+    else:
+        # Find the max int to multiplication table
+        max_count_by = int(math.sqrt(target_value))
+
+        # Count by x to check if value is divisable by x
+        for count_by in range(2, max_count_by):
+            count = 0
+
+            # If count < value has not reached value yet, keep going
+            # if count != value keep going
+            while count < value and count != value:
+                count += count_by
+
+                # If count == value, value is not prime
+                if count == value:
+                    count_list[index] = 0
+
+# Final print out
+for value in count_list:
+    if value != 0:
+        put value
