@@ -3,20 +3,30 @@
 # TODO 2, 3 are being flaged -- this is bad
 # TODO set the invaled int to something we can flag ex. 0
 
-target_value = input("Enter your nth number you would like to compute until: ")
-target_value = int(target_value)
+# Take use input
+# target_value = input("Enter your nth number you would like to compute until: ")
+# target_value = int(target_value)
+
+# TODO remove and reinstate input
+# TODO remove and reinstate input
+# TODO remove and reinstate input
+# TODO remove and reinstate input
+target_value = 25 
 
 count_list = []
 white_index_list = []
 
+# Create array until target Num
 for num in range(0, target_value):
     count_list.append(num)
 
-for index, value in enumerate(count_list):  # iterate count list
-    # set prime defualt
+# iterate count list
+for index, value in enumerate(count_list):
+    # If this dose not get changed value is prime
     prime = True
 
-    for count_by in range(2, 6):  # count by x
+    # Count by x to check f value is divisable by x
+    for count_by in range(2, 6):
         count = 0
 
         # If count < value has not reached value yet, keep going
