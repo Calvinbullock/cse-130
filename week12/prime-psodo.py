@@ -33,10 +33,10 @@ for index, value in enumerate(count_list):
 
     else:
         # Find the max int to multiplication table
-        count_by_target = int(math.sqrt(target_value))
+        max_count_by = int(math.sqrt(target_value))
 
         # Count by x to check if value is divisable by x
-        for count_by in range(2, count_by_target):
+        for count_by in range(2, max_count_by):
             count = 0
 
             # If count < value has not reached value yet, keep going
