@@ -3,15 +3,16 @@
 # TODO 2, 3 are being flaged -- this is bad
 # TODO set the invaled int to something we can flag ex. 0
 
+
+# BUG remove and reinstate input
+# BUG remove and reinstate input
+# BUG remove and reinstate input
+# BUG remove and reinstate input
+target_value = 25
+
 # Take use input
 # target_value = input("Enter your nth number you would like to compute until: ")
 # target_value = int(target_value)
-
-# TODO remove and reinstate input
-# TODO remove and reinstate input
-# TODO remove and reinstate input
-# TODO remove and reinstate input
-target_value = 25 
 
 count_list = []
 white_index_list = []
