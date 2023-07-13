@@ -5,7 +5,7 @@
 # 3. Assignment Description:
 #      This Program will calculate prime to the nth number.
 # 4. What was the hardest part? Be as specific as possible.
-#      -a paragraph or two about how the assignment went for you-
+#      Finding useful places for asserts.
 # 5. How long did it take for you to complete the assignment?
 #      2 Hours
 
@@ -17,7 +17,7 @@ def main():
     # prime_iterater(-1)
     # print()
     # prime_iterater(0)
-    print()
+    # print()
     prime_iterater(1)
     print()
     prime_iterater(2)
@@ -40,11 +40,11 @@ def main():
         target_num = input("Enter nth term to check: ")
         target_num = int(target_num)
 
-        if target_num > 0:
+        if target_num > 2:
             exit = False
 
         else:
-            print("Please enter number greater then zero")
+            print("Please enter number greater then One")
 
     prime_iterater(target_num)
 
@@ -55,6 +55,11 @@ def prime_iterater(target_num):
     # Paramiters:
     #    [Target_num: int] - the nth term to cumpute prime up to
     #
+
+    assert target_num > 0
+
+    # bring the target up to base 1 insted of base 0
+    target_num += 1
     numbers = []
 
     # Build list
@@ -68,10 +73,15 @@ def prime_iterater(target_num):
     # First loop check every value
     for factor in range(2, int(math.sqrt(target_num) + 1)):
         # If value is true, check it
+
+        assert 2 <= factor <= math.sqrt(target_num) + 1
+
         if numbers[factor]:
             # Iterate along factore
             for multiple in range(factor * 2, target_num, factor):  # by factor
                 numbers[multiple] = False  # falls out of range...
+
+                assert factor * 2 <= multiple <= target_num
 
     # Print out primes in list
     for index in range(2, target_num):
